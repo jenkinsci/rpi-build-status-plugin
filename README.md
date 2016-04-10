@@ -9,10 +9,10 @@ It uses the [pi4j](http://pi4j.com/) / [wiringpi](http://wiringpi.com/) librarie
 ##Build
 
 1. Install Java (must be 1.7+)
-1. Install Maven
-1. Clone this repo
-2. run 'mvn clean install'
-3. Install hpi file to Jenkins
+2. Install Maven
+3. Clone this repo
+4. run 'mvn clean install'
+5. Install hpi file to Jenkins
 
 
 ##Configuration

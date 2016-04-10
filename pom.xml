@@ -10,7 +10,7 @@
     <relativePath/>
   </parent>
   <groupId>net.sleepymouse.jenkins.plugins</groupId>
-  <artifactId>rpi-ledborg</artifactId>
+  <artifactId>rpi-build-status</artifactId>
   <version>0.1</version>
   <packaging>hpi</packaging>
 
@@ -28,7 +28,7 @@
     -->
   </properties>
 
-  <name>raspberry-pi-ledborg-build-status</name>
+  <name>raspberry-pi-build-status</name>
   <description>Drive the ultra bright RGB LED add on board to show build status</description>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
 
