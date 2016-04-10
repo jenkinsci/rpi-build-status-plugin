@@ -1,0 +1,8 @@
+<?jelly escape-by-default='true'?>
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  This plugin reflects the latest build state using <a href="https://www.piborg.org/ledborg">LedBorg</a> ,
+  an ultra bright RGB LED add on board for the Raspberry Pi.
+</div>
