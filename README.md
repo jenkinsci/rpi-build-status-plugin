@@ -1,7 +1,9 @@
 #Jenkins LedBorg Plugin
 
+Show build state via an LED on your Pi
 
-This project is for a Jenkins plugin to control the LedBorg module for the Raspberry Pi. It uses the pi4j / wiringpi libraries to drive the GPIO pins.
+This project is for a Jenkins plugin to control the [LedBorg](https://www.piborg.org/ledborg) module for the Raspberry Pi. 
+It uses the [pi4j](http://pi4j.com/) / [wiringpi](http://wiringpi.com/) libraries to drive the GPIO pins.
 
 
 ##Build
@@ -47,7 +49,7 @@ Configure the plugin by adding it as a Post Build Action.  This allows selection
 
 ###Step 5 (Optional)
 
-I have found that the jenkins UI appears to perform better using the chromium browser.  Install if required using the following steps:
+I have found that the jenkins UI appears to perform better using the chromium browser.  Install, if required, using the following steps:
 
 ```
 wget -qO - http://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
@@ -57,7 +59,7 @@ sudo apt-get install chromium-browser rpi-youtube
 ```
 
 
-##Links:
+##Links
 
 PiBorg / LedBorg: https://www.piborg.org/ledborg
 
