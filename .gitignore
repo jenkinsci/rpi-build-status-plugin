@@ -6,6 +6,10 @@ build/
 docs/
 target/
 
+# odd items #
+###################
+*.bat
+
 
 # Gradle #
 ###################

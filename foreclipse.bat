@@ -1,1 +1,0 @@
- mvn -DdownloadSources=true -DdownloadJavadocs=true -DoutputDirectory=target/eclipse-classes -Declipse.workspace=C:/Users/respley/workspace eclipse:eclipse eclipse:add-maven-repo
