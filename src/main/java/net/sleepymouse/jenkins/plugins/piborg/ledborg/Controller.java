@@ -3,7 +3,8 @@
  */
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
-import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.LOG_MSG;
+
+import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.*;
 
 import java.io.PrintStream;
 import java.util.logging.*;
@@ -19,19 +20,12 @@ import net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.Colour;
  */
 public class Controller
 {
-	private static volatile Controller	controller		= null;
-	private static GpioController		gpio			= null;
-	private static IGPIOManager			gpioManager		= null;
+	private static volatile Controller	controller	= null;
+	private static GpioController		gpio		= null;
+	private static IGPIOManager			gpioManager	= null;
 	//
 	private PrintStream					consoleLogger;
 	private Logger						fileLogger;
-	//
-	private final static String			PRIVILEDE_MSG	= "Unable to get non-Privileged Access to GPIO. Will fallback to logging messages only.";
-	private final static String			FALLBACK_MSG	= "Unable to talk to RPi GPIO.  Will fallback to logging messages only.";
-	private final static String			COLOUR_MSG		= "Requested LED colour to display:";
-	private final static String			START_MSG		= "Attempting to initialise GPIO interface";
-	private final static String			RUNNING_MSG		= "GPIO interface initialised";
-	private final static String			BAD_COLOUR_MSG	= "Invalid colour string supplied:";
 
 	/**
 	 * Private constructor as we only want one GPIO controller.
@@ -50,25 +44,25 @@ public class Controller
 			if (GpioUtil.isPrivilegedAccessRequired())
 			{
 				// Need non root access to GPIO
-				this.fileLogger.log(Level.WARNING, PRIVILEDE_MSG);
-				this.consoleLogger.println(LOG_MSG + " " + PRIVILEDE_MSG);
+				this.fileLogger.log(Level.WARNING, PRIVILEDE_MSG());
+				this.consoleLogger.println(LOG_MSG() + " " + PRIVILEDE_MSG());
 			}
 			else
 			{
 				// Get the GPIO interface
-				this.fileLogger.log(Level.INFO, START_MSG);
-				this.consoleLogger.println(LOG_MSG + " " + START_MSG);
+				this.fileLogger.log(Level.INFO, START_MSG());
+				this.consoleLogger.println(LOG_MSG() + " " + START_MSG());
 				GpioUtil.enableNonPrivilegedAccess();
 				gpio = GpioFactory.getInstance();
-				this.fileLogger.log(Level.INFO, RUNNING_MSG);
-				this.consoleLogger.println(LOG_MSG + " " + RUNNING_MSG);
+				this.fileLogger.log(Level.INFO, RUNNING_MSG());
+				this.consoleLogger.println(LOG_MSG() + " " + RUNNING_MSG());
 			}
 		}
 		catch (Throwable t)
 		{
 			// Can be all sorts of reasons to end up here - Not a Pi, no library loaded etc
-			this.fileLogger.log(Level.WARNING, FALLBACK_MSG + ": " + t.getMessage());
-			this.consoleLogger.println(LOG_MSG + " " + FALLBACK_MSG);
+			this.fileLogger.log(Level.WARNING, FALLBACK_MSG() + ": " + t.getMessage());
+			this.consoleLogger.println(LOG_MSG() + " " + FALLBACK_MSG());
 		}
 	}
 
@@ -143,8 +137,8 @@ public class Controller
 	 */
 	public void setColour(String colour)
 	{
-		fileLogger.log(Level.INFO, COLOUR_MSG + colour);
-		consoleLogger.println(LOG_MSG + " " + COLOUR_MSG + colour);
+		fileLogger.log(Level.INFO, COLOUR_MSG() + colour);
+		consoleLogger.println(LOG_MSG() + " " + COLOUR_MSG() + colour);
 		try
 		{
 			// convert to enum
@@ -153,7 +147,7 @@ public class Controller
 		catch (Exception e)
 		{
 			// Colour has no enum match. Should not happen
-			fileLogger.log(Level.SEVERE, BAD_COLOUR_MSG + colour);
+			fileLogger.log(Level.SEVERE, BAD_COLOUR_MSG() + colour);
 		}
 	}
 

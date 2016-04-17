@@ -3,6 +3,8 @@
  */
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
+import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.LOAD_DESCRIPTOR;
+
 import java.util.EnumSet;
 import java.util.logging.*;
 
@@ -34,7 +36,7 @@ public class Descriptor extends BuildStepDescriptor<Publisher>
 	public Descriptor()
 	{
 		// Get persisted data
-		logger.log(Level.INFO, "Loading descriptor persisted data");
+		logger.log(Level.INFO, LOAD_DESCRIPTOR());
 		load();
 	}
 

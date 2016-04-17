@@ -3,7 +3,7 @@
  */
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
-import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.LOG_MSG;
+import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.*;
 
 import java.io.IOException;
 import java.util.logging.*;
@@ -118,7 +118,7 @@ public class LedBorgPublisher extends Notifier implements SimpleBuildStep
 		Result result = build.getResult();
 		if (null != result)
 		{
-			listener.getLogger().println(LOG_MSG + " Setting LED for " + result.toString());
+			listener.getLogger().println(LOG_MSG() + " " + SET_LED() + " " + result.toString());
 
 			if (result.isBetterOrEqualTo(Result.SUCCESS))
 			{
@@ -143,9 +143,8 @@ public class LedBorgPublisher extends Notifier implements SimpleBuildStep
 		}
 		else
 		{
-			listener.getLogger().println(LOG_MSG + " Setting LED for 'ongoing' - This should not happen !");
-			fileLoogger.log(Level.WARNING,
-					"Setting LED for 'ongoing' - This should not happen as build should be complete by now at thgis step");
+			listener.getLogger().println(LOG_MSG() + " " + ONGOING_ERR());
+			fileLoogger.log(Level.WARNING, ONGOING_ERR());
 		}
 	}
 

@@ -3,6 +3,8 @@
  */
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
+import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.*;
+
 import java.io.PrintStream;
 import java.util.logging.*;
 
@@ -28,7 +30,7 @@ public class FallbackGPIOManager implements IGPIOManager
 	 */
 	public void reset()
 	{
-		fileLogger.log(Level.INFO, "GPIO reset requested");
+		fileLogger.log(Level.INFO, GPIO_RESET());
 	}
 
 	/**
@@ -36,7 +38,7 @@ public class FallbackGPIOManager implements IGPIOManager
 	 */
 	public void shutdown()
 	{
-		fileLogger.log(Level.INFO, "GPIO shutdown requested");
+		fileLogger.log(Level.INFO, GPIO_SHUTDOWN());
 	}
 
 	/**
@@ -47,8 +49,9 @@ public class FallbackGPIOManager implements IGPIOManager
 	 */
 	public void setColour(Colour colour)
 	{
-		fileLogger.log(Level.INFO, "Setting LED colour: " + colour);
-		consoleLogger.println("Setting LED colour: " + colour);
+		String msg = SET_LED() + " " + colour;
+		fileLogger.log(Level.INFO, msg);
+		consoleLogger.println(msg);
 	}
 
 	/**

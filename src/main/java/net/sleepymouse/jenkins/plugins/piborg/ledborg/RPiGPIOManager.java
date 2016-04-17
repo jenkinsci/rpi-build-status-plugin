@@ -4,7 +4,7 @@
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
 import static com.pi4j.io.gpio.PinState.*;
-import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.LOG_MSG;
+import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.LOG_MSG;
 
 import java.io.PrintStream;
 import java.util.logging.*;
@@ -46,7 +46,7 @@ public class RPiGPIOManager implements IGPIOManager
 		//
 		// Cycle through colours for test
 		fileLogger.log(Level.INFO, RESET_MSG);
-		consoleLogger.println(LOG_MSG + " " + RESET_MSG);
+		consoleLogger.println(LOG_MSG() + " " + RESET_MSG);
 		for (Colour c : Colour.values())
 		{
 			setColour(c);
