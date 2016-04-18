@@ -30,7 +30,7 @@ public class FallbackGPIOManager implements IGPIOManager
 	 */
 	public void reset()
 	{
-		fileLogger.log(Level.INFO, GPIO_RESET());
+		fileLogger.log(Level.INFO, GPIO_RESET_MSG());
 	}
 
 	/**
@@ -38,7 +38,7 @@ public class FallbackGPIOManager implements IGPIOManager
 	 */
 	public void shutdown()
 	{
-		fileLogger.log(Level.INFO, GPIO_SHUTDOWN());
+		fileLogger.log(Level.INFO, GPIO_SHUTDOWN_MSG());
 	}
 
 	/**
@@ -49,7 +49,7 @@ public class FallbackGPIOManager implements IGPIOManager
 	 */
 	public void setColour(Colour colour)
 	{
-		String msg = SET_LED() + " " + colour;
+		String msg = SET_LED_MSG() + " " + colour;
 		fileLogger.log(Level.INFO, msg);
 		consoleLogger.println(msg);
 	}

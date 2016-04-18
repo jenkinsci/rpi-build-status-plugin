@@ -11,7 +11,7 @@ import java.util.logging.*;
 
 import com.pi4j.io.gpio.*;
 
-import net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.Colour;
+import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.Colour;
 
 /**
  * 

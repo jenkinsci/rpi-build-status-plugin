@@ -11,7 +11,7 @@
   </parent>
   <groupId>net.sleepymouse.jenkins.plugins</groupId>
   <artifactId>rpi-build-status</artifactId>
-  <version>0.1</version>
+  <version>0.2</version>
   <packaging>hpi</packaging>
 
   <properties>
@@ -53,7 +53,7 @@
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <url>https://github.com/ldirz80/ledborg</url>
   </scm>
    -->
 	<repositories>

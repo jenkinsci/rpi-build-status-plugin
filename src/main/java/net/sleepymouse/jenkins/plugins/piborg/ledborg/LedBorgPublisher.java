@@ -118,7 +118,7 @@ public class LedBorgPublisher extends Notifier implements SimpleBuildStep
 		Result result = build.getResult();
 		if (null != result)
 		{
-			listener.getLogger().println(LOG_MSG() + " " + SET_LED() + " " + result.toString());
+			listener.getLogger().println(LOG_MSG() + " " + SET_LED_MSG() + " " + result.toString());
 
 			if (result.isBetterOrEqualTo(Result.SUCCESS))
 			{

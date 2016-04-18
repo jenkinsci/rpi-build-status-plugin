@@ -11,23 +11,23 @@
     When submitted, it will be passed to the corresponding constructor parameter.
   -->
 
-	<f:entry name="successState" title="Choose LED to represent Success state" field="successState">
+	<f:entry name="successState" title="${CONFIG_SUCCESS}" field="successState">
 	   		<f:select/>
 	</f:entry>
 	
-	<f:entry name="unstableState" title="Choose LED to represent Unstable state" field="unstableState">
+	<f:entry name="unstableState" title="${CONFIG_UNSTABLE}" field="unstableState">
 	    	<f:select/>
 	</f:entry>
 	
-	<f:entry name="failureState" title="Choose LED to represent Failure state" field="failureState">
+	<f:entry name="failureState" title="${CONFIG_FAILURE}" field="failureState">
 	    	<f:select/>
 	</f:entry>
 	
-	<f:entry name="notBuiltState" title="Choose LED to represent Not Built state" field="notBuiltState">
+	<f:entry name="notBuiltState" title="${CONFIG_NOT_BUILT}" field="notBuiltState">
 	    	<f:select/>
 	</f:entry>
 	
-	<f:entry name="abortedState" title="Choose LED to represent Aborted state" field="abortedState">
+	<f:entry name="abortedState" title="${CONFIG_ABORTED}" field="abortedState">
 	    	<f:select/>
 	</f:entry>
 

@@ -3,7 +3,6 @@
  */
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
-
 import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.*;
 
 import java.io.PrintStream;
@@ -73,6 +72,7 @@ public class Controller
 	 *            Logger for console output
 	 * @param fileLogger
 	 *            Logger for log file output (Diagnostics)
+	 * @return An instance of the controller
 	 */
 	public static Controller getInstance(PrintStream consoleLogger, Logger fileLogger)
 	{
