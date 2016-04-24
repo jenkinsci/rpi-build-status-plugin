@@ -35,7 +35,7 @@ public class LedBorgPublisher extends Notifier implements SimpleBuildStep
 	private final String		notBuiltState;
 	private final String		abortedState;
 
-	private final static Logger	fileLoogger	= LogManager.getLogManager().getLogger("hudson.WebAppMain");
+	private final static Logger	fileLogger	= Logger.getLogger(LedBorgPublisher.class.getName());
 
 	@DataBoundConstructor
 	public LedBorgPublisher(String failureState, String successState, String unstableState, String notBuiltState,
@@ -114,7 +114,7 @@ public class LedBorgPublisher extends Notifier implements SimpleBuildStep
 	public void perform(Run<?, ?> build, FilePath workspace, Launcher launcher, TaskListener listener)
 			throws InterruptedException, IOException
 	{
-		Controller controller = Controller.getInstance(listener.getLogger(), fileLoogger);
+		Controller controller = Controller.getInstance(listener.getLogger(), fileLogger);
 		Result result = build.getResult();
 		if (null != result)
 		{
@@ -144,7 +144,7 @@ public class LedBorgPublisher extends Notifier implements SimpleBuildStep
 		else
 		{
 			listener.getLogger().println(LOG_MSG() + " " + ONGOING_ERR());
-			fileLoogger.log(Level.WARNING, ONGOING_ERR());
+			fileLogger.log(Level.WARNING, ONGOING_ERR());
 		}
 	}
 

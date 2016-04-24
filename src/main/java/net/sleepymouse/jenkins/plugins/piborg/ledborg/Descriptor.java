@@ -28,7 +28,7 @@ import net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.Colour;
 public class Descriptor extends BuildStepDescriptor<Publisher>
 {
 
-	private final static Logger logger = LogManager.getLogManager().getLogger("hudson.WebAppMain");
+	private final static Logger logger =  Logger.getLogger(Descriptor.class.getName());
 
 	/**
 	 * In order to load the persisted global configuration, you have to call load() in the constructor.
