@@ -28,7 +28,7 @@ import net.sleepymouse.jenkins.plugins.piborg.ledborg.Constants.Colour;
 public class Descriptor extends BuildStepDescriptor<Publisher>
 {
 
-	private final static Logger logger =  Logger.getLogger(Descriptor.class.getName());
+	private final static Logger logger = Logger.getLogger(Descriptor.class.getName());
 
 	/**
 	 * In order to load the persisted global configuration, you have to call load() in the constructor.
@@ -59,8 +59,9 @@ public class Descriptor extends BuildStepDescriptor<Publisher>
 	@Override
 	public boolean configure(StaplerRequest req, JSONObject formData) throws FormException
 	{
+		boolean result = super.configure(req, formData);
 		save();
-		return super.configure(req, formData);
+		return result;
 	}
 
 	/**
