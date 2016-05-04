@@ -44,14 +44,14 @@
 			<id>Z80Halt</id>
 			<name>Z80 Halt</name>
 			<email>z80halt@gmail.com</email>
-			<url>https://github.com/ldirz80</url>
+			<url>https://github.com/jenkinsci/rpi-build-status-plugin</url>
 		</developer>
 	</developers>
 
 	<scm>
-		<url>https://github.com/ldirz80/ledborg</url>
-		<connection>scm:git:git://github.com/ldirz80/ledborg.git</connection>
-		<developerConnection>scm:git:ldirz80@github.com/ldirz80/ledborg.git</developerConnection>
+		<url>https://github.com/jenkinsci/rpi-build-status-plugin.git</url>
+		<connection>scm:git:git://github.com/jenkinsci/rpi-build-status-plugin.git</connection>
+		<developerConnection>scm:git:ldirz80@github.com/jenkinsci/rpi-build-status-plugin.git</developerConnection>
 	</scm>
 
 	<repositories>
