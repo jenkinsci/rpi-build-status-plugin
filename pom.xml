@@ -41,9 +41,9 @@
 
 	<developers>
 		<developer>
-			<id>Z80Halt</id>
-			<name>Z80 Halt</name>
-			<email>z80halt@gmail.com</email>
+			<id>codingrodent</id>
+			<name>Coding Rodent</name>
+			<email>codingrodent@gmail.com</email>
 			<url>https://github.com/jenkinsci/rpi-build-status-plugin</url>
 		</developer>
 	</developers>
@@ -51,7 +51,7 @@
 	<scm>
 		<url>https://github.com/jenkinsci/rpi-build-status-plugin.git</url>
 		<connection>scm:git:git://github.com/jenkinsci/rpi-build-status-plugin.git</connection>
-		<developerConnection>scm:git:ldirz80@github.com/jenkinsci/rpi-build-status-plugin.git</developerConnection>
+		<developerConnection>scm:git:codingrodent@gmail.com/jenkinsci/rpi-build-status-plugin.git</developerConnection>
 	</scm>
 
 	<repositories>
