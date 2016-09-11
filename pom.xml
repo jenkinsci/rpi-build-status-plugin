@@ -27,7 +27,7 @@
 			The Stapler Maven plugin version required by the plugin. -->
 	</properties>
 
-	<name>raspberry-pi-build-status</name>
+	<name>Raspberry pi Build Status Plugin</name>
 	<description>Drive the ultra bright RGB LED add on board to show build status</description>
 	<url>https://wiki.jenkins-ci.org/display/JENKINS/RPi+Build+Status+Plugin</url>
 

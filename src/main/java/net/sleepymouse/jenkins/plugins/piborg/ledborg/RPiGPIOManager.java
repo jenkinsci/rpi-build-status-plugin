@@ -4,7 +4,7 @@
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
 import static com.pi4j.io.gpio.PinState.*;
-import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.LOG_MSG;
+import static net.sleepymouse.jenkins.plugins.Messages.LOG_MSG;
 
 import java.io.PrintStream;
 import java.util.logging.*;

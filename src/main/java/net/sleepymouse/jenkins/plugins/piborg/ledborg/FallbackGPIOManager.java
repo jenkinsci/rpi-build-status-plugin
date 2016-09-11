@@ -3,7 +3,7 @@
  */
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
-import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.*;
+import static net.sleepymouse.jenkins.plugins.Messages.*;
 
 import java.io.PrintStream;
 import java.util.logging.*;
