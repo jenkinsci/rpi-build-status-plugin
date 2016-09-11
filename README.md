@@ -32,8 +32,7 @@ sudo apt-get install jenkins
 
 Once installed the Jenkins user needs various groups configuring:
 ```
-sudo groups jenkins gpio
-sudo groups jenkins sudo
+sudo adduser jenkins gpio
 ```
 
 
