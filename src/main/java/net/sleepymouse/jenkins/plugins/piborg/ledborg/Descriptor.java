@@ -3,7 +3,7 @@
  */
 package net.sleepymouse.jenkins.plugins.piborg.ledborg;
 
-import static net.sleepymouse.jenkins.plugins.piborg.ledborg.Messages.LOAD_DESCRIPTOR_MSG;
+import static net.sleepymouse.jenkins.plugins.Messages.LOAD_DESCRIPTOR_MSG;
 
 import java.util.EnumSet;
 import java.util.logging.*;
