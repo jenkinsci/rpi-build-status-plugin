@@ -43,8 +43,8 @@ public class Controller
 			if (GpioUtil.isPrivilegedAccessRequired())
 			{
 				// Need non root access to GPIO
-				this.fileLogger.log(Level.WARNING, PRIVILEDE_MSG());
-				this.consoleLogger.println(LOG_MSG() + " " + PRIVILEDE_MSG());
+				this.fileLogger.log(Level.WARNING, PRIVILEGE_MSG());
+				this.consoleLogger.println(LOG_MSG() + " " + PRIVILEGE_MSG());
 			}
 			else
 			{
