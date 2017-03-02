@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>net.sleepymouse.jenkins.plugins</groupId>
 	<artifactId>rpi-build-status</artifactId>
-	<version>0.4</version>
+	<version>0.5</version>
 	<packaging>hpi</packaging>
 
 	<properties>
@@ -49,42 +49,42 @@
 		</developer>
 	</developers>
 
-	<scm>
-		<url>https://github.com/jenkinsci/rpi-build-status-plugin.git</url>
-		<connection>scm:git:git://github.com/jenkinsci/rpi-build-status-plugin.git</connection>
-		<developerConnection>scm:havelaptopwillcode@gmail.com/jenkinsci/rpi-build-status-plugin.git</developerConnection>
-	</scm>
+      <scm>
+        <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
+        <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
+      </scm>
 
-	<repositories>
-		<repository>
-			<id>repo.jenkins-ci.org</id>
-			<url>http://repo.jenkins-ci.org/public/</url>
-		</repository>
-		<repository>
-			<id>oss-snapshots-repo</id>
-			<name>Sonatype OSS Maven Repository</name>
-			<url>https://oss.sonatype.org/content/groups/public</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
+        <repositories>
+            <repository>
+                <id>repo.jenkins-ci.org</id>
+                <url>http://repo.jenkins-ci.org/public/</url>
+            </repository>
+            <repository>
+                <id>oss-snapshots-repo</id>
+                <name>Sonatype OSS Maven Repository</name>
+                <url>https://oss.sonatype.org/content/groups/public</url>
+                <snapshots>
+                    <enabled>true</enabled>
+                    <updatePolicy>always</updatePolicy>
+                </snapshots>
+            </repository>
+        </repositories>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>repo.jenkins-ci.org</id>
-			<url>http://repo.jenkins-ci.org/public/</url>
-		</pluginRepository>
-	</pluginRepositories>
+        <pluginRepositories>
+            <pluginRepository>
+                <id>repo.jenkins-ci.org</id>
+                <url>http://repo.jenkins-ci.org/public/</url>
+            </pluginRepository>
+        </pluginRepositories>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.pi4j</groupId>
-			<artifactId>pi4j-core</artifactId>
-			<version>1.1</version>
-			<scope>compile</scope>
-		</dependency>
-	</dependencies>
+        <dependencies>
+            <dependency>
+                <groupId>com.pi4j</groupId>
+                <artifactId>pi4j-core</artifactId>
+                <version>1.1</version>
+                <scope>compile</scope>
+            </dependency>
+        </dependencies>
 
-</project>
+    </project>
