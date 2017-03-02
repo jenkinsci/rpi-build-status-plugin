@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>net.sleepymouse.jenkins.plugins</groupId>
 	<artifactId>rpi-build-status</artifactId>
-	<version>0.5-SNAPSHOT</version>
+	<version>0.5</version>
 	<packaging>hpi</packaging>
 
 	<properties>
@@ -52,7 +52,8 @@
         <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</developerConnection>
         <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
-    </scm>
+      <tag>rpi-build-status-0.5</tag>
+  </scm>
 
         <repositories>
             <repository>
