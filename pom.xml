@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>net.sleepymouse.jenkins.plugins</groupId>
 	<artifactId>rpi-build-status</artifactId>
-	<version>0.5</version>
+	<version>0.5-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 
 	<properties>
