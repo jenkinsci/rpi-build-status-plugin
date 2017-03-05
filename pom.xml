@@ -10,7 +10,7 @@
     </parent>
     <groupId>net.sleepymouse.jenkins.plugins</groupId>
     <artifactId>rpi-build-status</artifactId>
-    <version>0.6-SNAPSHOT</version>
+    <version>0.6</version>
     <packaging>hpi</packaging>
 
     <properties>
