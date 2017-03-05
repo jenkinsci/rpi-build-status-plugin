@@ -1,6 +1,6 @@
 #Jenkins LedBorg Plugin
 
-[![Build Status](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/14/badge/icon)](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/14/)
+[![Build Status](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/31/badge/icon)](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/31/)
 
 Show build state via an LED on your Pi
 
@@ -57,7 +57,7 @@ Pi4J Project: http://pi4j.com/
 
 WiringPi Native Library: http://wiringpi.com/
 
-Chromium: https://www.raspberrypi.org/forums/viewtopic.php?t=121195
+
 
 
 
