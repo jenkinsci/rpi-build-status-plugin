@@ -4,7 +4,7 @@ To configure the development environment to build & deploy correctly, a number o
 
 Full instructions are documented [here](https://wiki.jenkins-ci.org/display/JENKINS/Hosting+Plugins)
 
-##Github
+##GitHub
 
 Configure github to use [SSH](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
 This saves issues with account names and passwords when building
@@ -24,16 +24,16 @@ Put this in your pom.
 
 ```
 
-###Tell Maven release whcih credentials to use
+###Tell Maven release which credentials to use
 
 Two sets of credentials are required to perform a release. Your github account and your jenkins-ci.org account.  A problem
-arises in telling Maven which set to use where.  The github account credentials is solved by use of SSH.  To specify the jenkins-ci.org account 
+arises in telling Maven which set to use where.  The GitHub account credentials is solved by use of SSH.  To specify the jenkins-ci.org account 
 credentials, put the following into ~/.m2/settings.xml
 
 ```
   <servers>
     <server>
-      <id>maven.jenkins-ci.org</id> <!-- For parent 1.397 or newer; before this use id java.net-m2-repository -->
+      <id>maven.jenkins-ci.org</id>
       <username>...</username>
       <password>...</password>
     </server>
