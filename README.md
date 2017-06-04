@@ -1,4 +1,4 @@
-#Jenkins LedBorg Plugin
+# Jenkins LedBorg Plugin
 
 [Development Fork](https://github.com/codesqueak/rpi-build-status-plugin)
 
@@ -12,7 +12,7 @@ This project is for a Jenkins plugin to control the [LedBorg](https://www.piborg
 It uses the [pi4j](http://pi4j.com/) / [wiringpi](http://wiringpi.com/) libraries to drive the GPIO pins.
 
 
-##Build
+## Build
 
 1. Install Java (must be 1.7+)
 2. Install Maven
@@ -21,10 +21,10 @@ It uses the [pi4j](http://pi4j.com/) / [wiringpi](http://wiringpi.com/) librarie
 5. Install hpi file to Jenkins
 
 
-##Configuration
+## Configuration
 
 
-###Step 1.
+### Step 1.
 
 If not already present, install Jenkins.  I recommend using this method:
 ```
@@ -34,7 +34,7 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
-###Step 2
+### Step 2
 
 Once installed the Jenkins user needs various groups configuring:
 ```
@@ -42,18 +42,18 @@ sudo adduser jenkins gpio
 ```
 
 
-###Step 3
+### Step 3
 
 Install the plugn.
 
 
-###Step 4
+### Step 4
 
 Configure the plugin by adding it as a Post Build Action.  This allows selection of LED colour per build state.
 
 
 
-##Links
+## Links
 
 PiBorg / LedBorg: https://www.piborg.org/ledborg
 
