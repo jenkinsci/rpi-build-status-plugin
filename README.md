@@ -4,7 +4,7 @@
 
 [Deployment Repository](https://github.com/jenkinsci/rpi-build-status-plugin)
 
-[![Build Status](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/31/badge/icon)](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/31/)
+[![Build Status](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/31/badge/icon)](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/35/)
 
 Show build state via an LED on your Pi
 
