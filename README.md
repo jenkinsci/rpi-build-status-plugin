@@ -1,5 +1,9 @@
 #Jenkins LedBorg Plugin
 
+[Development Fork](https://github.com/codesqueak/rpi-build-status-plugin)
+
+[Deployment Repository](https://github.com/jenkinsci/rpi-build-status-plugin)
+
 [![Build Status](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/31/badge/icon)](https://jenkins.ci.cloudbees.com/job/plugins/job/rpi-build-status-plugin/31/)
 
 Show build state via an LED on your Pi
